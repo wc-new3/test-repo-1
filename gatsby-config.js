@@ -38,6 +38,9 @@ module.exports = {
       options: {
         // the only required plugin option for WordPress is the GraphQL url.
         url,
+        production: {
+          allow404Images: true    
+        }
         // If your WordPress server is overloaded during a build,
         // try the following settings to reduce concurrency.
         // see https://github.com/gatsbyjs/gatsby/blob/master/packages/gatsby-source-wordpress/docs/plugin-options.md#schemarequestconcurrency
